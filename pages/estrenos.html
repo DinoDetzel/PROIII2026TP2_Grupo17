@@ -4,80 +4,211 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Aurora 📽️ - Estrenos</title>
-    <meta name="description" content="Cine Aurora - Estrenos" />
+    <meta name="description" content="Cine Aurora - Próximos estrenos" />
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+      .estrenos-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 32px;
+      }
+
+      .estrenos-logo {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .estrenos-logo img {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+        background: white;
+        border-radius: 50%;
+        padding: 4px;
+      }
+
+      .estrenos-logo h1 {
+        margin: 0;
+        color: #f8fafc;
+      }
+
+      .estrenos-nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      .estrenos-nav a {
+        color: #f8fafc;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 8px;
+      }
+
+      .estrenos-nav a:hover {
+        background: #e11d48;
+      }
+
+      .estrenos-titulo {
+        text-align: center;
+        margin: 24px 0 8px;
+        color: #f8fafc;
+      }
+
+      .estrenos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 220px);
+        gap: 24px;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .estreno-card {
+        background: #1e293b;
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .estreno-card img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .estreno-card h3,
+      .estreno-card p {
+        color: #f8fafc;
+      }
+
+      .estreno-card a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 14px;
+        background: #e11d48;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+
+      .estreno-card a:hover {
+        opacity: 0.9;
+      }
+
+      .estrenos-footer {
+        text-align: center;
+        padding: 20px;
+        background: black;
+        margin-top: 40px;
+        color: white;
+      }
+
+      @media (max-width: 900px) {
+        .estrenos-grid {
+          grid-template-columns: repeat(2, 220px);
+        }
+      }
+
+      @media (max-width: 700px) {
+        .estrenos-header {
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .estrenos-logo {
+          flex-direction: column;
+        }
+
+        .estrenos-nav {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .estrenos-grid {
+          grid-template-columns: 220px;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <header>
-      <div>
+    <header class="estrenos-header">
+      <div class="estrenos-logo">
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="#">Próximos estrenos</a>
-          <a href="../pages/login.html">Mi perfil</a>
-        </nav>
-      </div>
+
+      <nav class="estrenos-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="#">Próximos estrenos</a>
+        <a href="./login.html">Mi perfil</a>
+      </nav>
     </header>
 
     <main>
       <section>
-        <div>
-          <div>
-            <h1>Próximos Lanzamientos</h1>
+        <h2 class="estrenos-titulo">Próximos estrenos</h2>
+
+        <div class="estrenos-grid">
+          <div class="estreno-card">
+            <img src="../assets/img/poster-1.png" alt="Póster de Horizonte Final" />
+            <h3>Horizonte Final</h3>
+            <p>Ciencia ficción</p>
+            <p>Estreno: Mayo 2026</p>
+            <a href="./detalle.html">Ver más</a>
           </div>
 
-          <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
+          <div class="estreno-card">
+            <img src="../assets/img/poster-1.png" alt="Póster de Noche de Fuego" />
+            <h3>Noche de Fuego</h3>
+            <p>Acción</p>
+            <p>Estreno: Junio 2026</p>
+            <a href="./detalle.html">Ver más</a>
+          </div>
+
+          <div class="estreno-card">
+            <img src="../assets/img/poster-1.png" alt="Póster de La Última Risa" />
+            <h3>La Última Risa</h3>
+            <p>Comedia</p>
+            <p>Estreno: Junio 2026</p>
+            <a href="./detalle.html">Ver más</a>
+          </div>
+
+          <div class="estreno-card">
+            <img src="../assets/img/poster-1.png" alt="Póster de Ecos del Pasado" />
+            <h3>Ecos del Pasado</h3>
+            <p>Drama</p>
+            <p>Estreno: Julio 2026</p>
+            <a href="./detalle.html">Ver más</a>
+          </div>
+
+          <div class="estreno-card">
+            <img src="../assets/img/poster-1.png" alt="Póster de Sombras" />
+            <h3>Sombras</h3>
+            <p>Terror</p>
+            <p>Estreno: Agosto 2026</p>
+            <a href="./detalle.html">Ver más</a>
+          </div>
+
+          <div class="estreno-card">
+            <img src="../assets/img/poster-1.png" alt="Póster de Corazón en Ruta" />
+            <h3>Corazón en Ruta</h3>
+            <p>Romance</p>
+            <p>Estreno: Septiembre 2026</p>
+            <a href="./detalle.html">Ver más</a>
           </div>
         </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
       </section>
-
-      <footer>
-        <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
-      </footer>
     </main>
+
+    <footer class="estrenos-footer">
+      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+    </footer>
   </body>
 </html>
