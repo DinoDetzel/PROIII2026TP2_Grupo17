@@ -1,0 +1,73 @@
+.card-horizontal {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #222;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    max-width: 700px;
+
+    margin: 20px auto;
+
+}
+
+/* poster */
+
+.card-horizontal__poster {
+
+    width: 120px;
+
+    border-radius: 6px;
+
+}
+
+/* info */
+
+.card-horizontal__info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+/* botones */
+
+.card-horizontal__buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+/* botones */
+
+.btn {
+
+    padding: 8px 14px;
+
+    background: #e11d48;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+}
+
+.btn-buy {
+
+    background: #e50914;
+
+}
