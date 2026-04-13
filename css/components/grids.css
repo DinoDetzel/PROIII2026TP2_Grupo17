@@ -1,0 +1,17 @@
+.grid-peliculas {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 220px);
+
+    gap: 25px;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
