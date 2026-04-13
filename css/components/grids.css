@@ -1,0 +1,55 @@
+.grid-peliculas {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 220px);
+
+    gap: 25px;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+/* Login */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.login-form input {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+.login-form button {
+    background: #e11d48;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    opacity: 0.8;
+}
