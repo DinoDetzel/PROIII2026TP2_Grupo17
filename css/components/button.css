@@ -1,23 +1,32 @@
+/* perfil */
 .btn {
-
     display: inline-block;
-
     padding: 8px 14px;
-
     background: #e11d48;
-
     color: white;
-
     text-decoration: none;
-
     border-radius: 6px;
-
     transition: 0.2s;
-
 }
 
 .btn:hover {
+    background: #b20710;
+}
 
+
+.btn-perfil {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
     background: #e11d48;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
+.btn-perfil:hover {
+    background: #b20710;
+    transform: translateY(-2px);
 }
