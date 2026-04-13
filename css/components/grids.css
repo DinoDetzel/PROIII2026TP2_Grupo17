@@ -63,7 +63,8 @@ main {
 }
 
 .perfil-container {
-    background: #1e293b; /* Color superficie */
+    background: #1e293b;
+    /* Color superficie */
     border-radius: 12px;
     padding: 30px;
     width: 100%;
@@ -71,7 +72,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .perfil-info {
@@ -85,7 +86,8 @@ main {
 .perfil-detalles h3 {
     font-size: 28px;
     margin-bottom: 15px;
-    color: #f59e0b; /* Color secundario */
+    color: #f59e0b;
+    /* Color secundario */
 }
 
 .perfil-detalles p {
@@ -104,7 +106,8 @@ main {
 }
 
 .lista-peliculas li {
-    background: #0f172a; /* Fondo oscuro */
+    background: #0f172a;
+    /* Fondo oscuro */
     padding: 12px 20px;
     border-radius: 8px;
     margin-bottom: 10px;
