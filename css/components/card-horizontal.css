@@ -18,7 +18,7 @@
 
 }
 
-.card-horizontal__info {
+.card-horizontal--info {
 
     display: flex;
 
@@ -28,7 +28,7 @@
 
 }
 
-.card-horizontal__division {
+.card-horizontal--division {
 
     border-bottom: 1px solid var(--color-texto-suave);
     

@@ -19,6 +19,6 @@
 body {
   font-family: 'Times New Roman', sans-serif;
   margin: 0px;
-  background: #0f172a;
-  color: #f8fafc;
+  background: var(--color-fondo);
+  color: var(--color-texto);
 }
