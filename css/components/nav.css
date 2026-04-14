@@ -18,7 +18,7 @@
 
 }
 
-.header__logo {
+.header-logo {
 
     display: flex;
 
@@ -29,7 +29,7 @@
 }
 
 
-.header__logo img {
+.header-logo img {
 
     width: 100px;
 
