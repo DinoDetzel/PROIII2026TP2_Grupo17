@@ -6,7 +6,7 @@
 
     justify-content: space-between;
 
-    background: #0f172a;
+    background: var(--color-superficie);
 
     padding: 15px 30px;
 
@@ -50,7 +50,7 @@
 
 .nav a {
 
-    color: #f8fafc;
+    color: var(--color-texto);
 
     text-decoration: none;
 
