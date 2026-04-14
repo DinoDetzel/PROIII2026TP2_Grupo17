@@ -24,6 +24,7 @@
     .nav {
         position: static;
         transform: none;
+        gap: 10px;
     }
 
     .card-horizontal {
